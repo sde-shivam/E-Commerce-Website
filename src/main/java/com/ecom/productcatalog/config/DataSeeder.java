@@ -43,28 +43,28 @@ public class DataSeeder implements CommandLineRunner {
         Product phone = new Product();
         phone.setName("SmartPhone");
         phone.setDescription("Latest model smartphone with amazing features");
-        phone.setImageUrl("");
+        phone.setImageUrl("https://placehold.co/600x400");
         phone.setPrice(699.99);
         phone.setCategory(electronics);
 
         Product laptop = new Product();
         laptop.setName("Laptop");
         laptop.setDescription("High-performance laptop for work and play.");
-        laptop.setImageUrl("");
+        laptop.setImageUrl("https://placehold.co/600x400");
         laptop.setPrice(999.99);
         laptop.setCategory(electronics);
 
         Product jacket = new Product();
         jacket.setName("Winter Jacket");
         jacket.setDescription("Warm and cozy jacket for winter.");
-        jacket.setImageUrl("");
+        jacket.setImageUrl("https://placehold.co/600x400");
         jacket.setPrice(129.99);
         jacket.setCategory(clothing);
 
         Product blender = new Product();
         blender.setName("Blender");
         blender.setDescription("High-speed blender for smoothing and more.");
-        blender.setImageUrl("");
+        blender.setImageUrl("https://placehold.co/600x400");
         blender.setPrice(89.99);
         blender.setCategory(home);
 
