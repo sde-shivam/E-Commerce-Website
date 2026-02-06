@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import ProductList from './productList';
+import ProductList from './ProductList';
 import CategoryFilter from './CategoryFilter';
 
 function App() {
@@ -11,18 +11,14 @@ function App() {
   const [sortOrder, setSortOrder] = useState("asc");
 
   useEffect(() => {
-  fetch('http://localhost:8080/api/products')
-    .then(response => response.json())
-    .then(data => {
-      console.log("PRODUCTS:", data);   // ADD THIS
-      setProducts(data);
-    });
+    fetch('http://localhost:8080/api/products')
+      .then(response => response.json())
+      .then(data => setProducts(data));
 
-  fetch('http://localhost:8080/api/categories')
-    .then(response => response.json())
-    .then(data => setCategories(data));
-}, []);
-
+    fetch('http://localhost:8080/api/categories')
+      .then(response => response.json())
+      .then(data => setCategories(data));
+  }, []);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
