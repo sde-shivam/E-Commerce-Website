@@ -15,7 +15,7 @@ The application follows a structured 3-tier architecture to handle the Product-C
 
 ---
 
-## 🚀 Features
+##   Features
 
 * **Category Module:** Organize products into logical groups.
 * **Smart Search:** Real-time product search by name or description.
@@ -81,6 +81,3 @@ Run Frontend:
 cd frontend
 npm install
 npm start
-
-👤 Author
-Shivam
